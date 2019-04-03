@@ -125,8 +125,8 @@ export default class SkipList {
     targetValue = Math.min(total - 1, targetValue);
 
     assert('targetValue must be a number', typeof targetValue === 'number');
-    assert('targetValue must be greater than or equal to 0', targetValue >= 0);
-    assert('targetValue must be no more than total', targetValue < total);
+    // assert('targetValue must be greater than or equal to 0', targetValue >= 0);
+    // assert('targetValue must be no more than total', targetValue < total);
 
     for (i = 0; i < numLayers; i++) {
       layer = layers[i];
